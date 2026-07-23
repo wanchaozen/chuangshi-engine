@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "properties": ["AGE", "HEALTH", "SPIRIT"],
+  "flags": ["FOUND_RELIC"],
+  "events": [
+    {
+      "key": "DISCOVER_RUINS",
+      "conditions": [
+        { "key": "AGE", "value": 16, "type": 2 }
+      ],
+      "choices": [
+        {
+          "label": "Explore",
+          "effects": [
+            { "target": "FOUND_RELIC", "value": 1 },
+            { "target": "RELIC_AWAKENS", "value": 1 }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "RELIC_AWAKENS",
+      "triggeredOnly": true,
+      "conditions": [],
+      "choices": [
+        {
+          "label": "Continue",
+          "effects": [
+            { "target": "SPIRIT", "value": 2 }
+          ]
+        }
+      ]
+    }
+  ]
+}
