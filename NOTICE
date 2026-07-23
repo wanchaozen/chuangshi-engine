@@ -1,0 +1,15 @@
+Chuangshi Engine
+Copyright (c) 2026 wanchaozen
+
+This project contains an adapted condition evaluator derived from:
+
+  Life Restart
+  https://github.com/VickScarlet/lifeRestart
+  Copyright (c) 2021 神戸小鳥
+
+The upstream component is used under the MIT License. The complete license
+notice is included in LICENSE.
+
+The Creation at the Beginning production story database, full artwork and
+audio libraries, and release binaries are not part of this repository. The
+limited showcase assets have separate terms in assets/README.md.

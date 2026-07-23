@@ -1,0 +1,49 @@
+{
+  "name": "@wanchaozen/chuangshi-engine",
+  "version": "0.1.0",
+  "description": "Data-driven event condition engine and static audit toolkit extracted from the Creation at the Beginning project.",
+  "type": "module",
+  "bin": {
+    "chuangshi-audit": "./src/cli.js"
+  },
+  "exports": {
+    ".": "./src/index.js",
+    "./audit": "./src/audit.js"
+  },
+  "scripts": {
+    "audit:example": "node src/cli.js examples/events.json",
+    "audit:world": "node src/cli.js examples/demo-world-100.zh-CN.json",
+    "assets:audio": "node scripts/generate-demo-audio.js",
+    "content:demo": "node scripts/generate-demo-world.js",
+    "test": "node --test",
+    "check": "node --check src/condition.js && node --check src/audit.js && node --check src/cli.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "event-engine",
+    "simulation",
+    "narrative-game",
+    "data-validation",
+    "static-analysis"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wanchaozen/chuangshi-engine.git"
+  },
+  "author": "wanchaozen",
+  "files": [
+    "src",
+    "docs",
+    "examples",
+    "assets",
+    "scripts/generate-demo-audio.js",
+    "scripts/generate-demo-world.js",
+    "LICENSE",
+    "NOTICE",
+    "README.md",
+    "README.zh-CN.md"
+  ]
+}

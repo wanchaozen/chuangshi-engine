@@ -1,0 +1,19 @@
+node_modules/
+coverage/
+reports/
+*.log
+.DS_Store
+.env
+.env.*
+!.env.example
+
+# Private production content and binary releases
+private-data/
+game-data/
+assets/private/
+*.apk
+*.aab
+*.exe
+*.zip
+*.xlsx
+*.xls
