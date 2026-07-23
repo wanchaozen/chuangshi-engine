@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#17211c">
+  <title>灯照诸天 · Chuangshi Engine Demo</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<main class="game-shell">
+  <header class="topbar">
+    <div><p class="eyebrow">CHUANGSHI ENGINE · OPEN-SOURCE DEMO</p><h1>灯照诸天</h1></div>
+    <button id="soundToggle" class="icon-button" type="button" aria-pressed="false">♫ 开启音乐</button>
+  </header>
+  <section class="stage" aria-live="polite">
+    <div class="portrait-frame"><img src="../assets/images/gu-changyuan.png" alt="演示人物立绘"></div>
+    <article class="event-card">
+      <div class="event-meta"><span id="chapter">原创百事件演示篇</span><span id="progress">0 / 100</span></div>
+      <h2 id="eventTitle">一灯照见百种人生</h2>
+      <p id="eventText">这是《创世之初》事件引擎的独立开源演示。正式剧情、人物与商业资源不在本仓库中。</p>
+      <div id="choices" class="choices"><button id="startButton" class="choice primary" type="button">开始此世</button></div>
+    </article>
+  </section>
+  <aside class="ledger" aria-label="当前属性">
+    <div><span>年龄</span><strong data-stat="AGE">0</strong></div>
+    <div><span>体魄</span><strong data-stat="HEALTH">5</strong></div>
+    <div><span>洞察</span><strong data-stat="INSIGHT">0</strong></div>
+    <div><span>仁心</span><strong data-stat="COMPASSION">0</strong></div>
+    <div><span>勇气</span><strong data-stat="COURAGE">0</strong></div>
+    <div><span>声望</span><strong data-stat="REPUTATION">0</strong></div>
+  </aside>
+  <footer><span>100个原创事件 · 2张展示图 · 1首原创氛围音乐</span><a href="https://github.com/wanchaozen/chuangshi-engine">查看源码</a></footer>
+</main>
+<audio id="ambient" loop preload="none" src="../assets/audio/ink-mountain-demo.wav"></audio>
+<script type="module" src="./app.js"></script>
+</body>
+</html>
