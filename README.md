@@ -28,6 +28,12 @@ It also includes an independent, original
 shows event chaining, choices, state changes, and an ending without exposing
 any production story, character, or hidden condition from the game.
 
+## Playable browser demo
+
+The zero-build browser demo connects the 100-event story, two curated showcase
+images, stat changes, branching choices, and an original ambient track. Serve
+the repository root with any static HTTP server, then open `demo/`.
+
 ## Why this exists
 
 Large data-driven games can fail silently: a typo in a target name may make an

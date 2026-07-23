@@ -37,6 +37,7 @@
   "files": [
     "src",
     "docs",
+    "demo",
     "examples",
     "assets",
     "scripts/generate-demo-audio.js",
