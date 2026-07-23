@@ -1,0 +1,25 @@
+name: Feature request
+description: Propose a reusable event-engine capability
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What maintainer or event-authoring problem should be solved?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: semantics
+    attributes:
+      label: Semantic impact
+      description: Could this change conditions, ordering, time, probability, or event reachability?
+    validations:
+      required: true
